@@ -101,7 +101,3 @@ pip install numpy pandas matplotlib scikit-learn
 - Analyze selected vs eliminated features  
 
 ---
-
-## 👤 Author
-**Nishant Kumar**  
-B.Tech – Artificial Intelligence & Machine Learning  
