@@ -1,73 +1,107 @@
-# 📊 Lasso Regression on Housing Data
+# 📈 Lasso Regression on Housing Dataset
 
-This project demonstrates the implementation of **Lasso Regression** using Python to predict housing prices based on given features. It is a beginner-friendly machine learning project focused on understanding data preprocessing, model training, evaluation, and the effect of L1 regularization.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Lasso%20Regression-orange)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
-## 📁 Project Structure
+## 🔹 Project Overview
+This project implements **Lasso Regression** using scikit-learn to predict house prices from a housing dataset.
+Lasso Regression applies **L1 regularization**, which not only helps reduce overfitting but can also perform
+feature selection by shrinking some coefficients to zero.
 
-Lasso-Regression-Project/
-├── Lasso_Regression.ipynb
-├── housing.csv
-└── README.md
+The notebook demonstrates the complete machine learning workflow, including data loading, preprocessing,
+model training, evaluation, and residual analysis.
 
-## 📌 Project Overview
+---
 
-Lasso Regression is a supervised machine learning algorithm that extends linear regression by applying L1 regularization, which helps reduce overfitting and perform feature selection.
+## 📂 Repository Contents
+Lasso_Regression  
+│  
+├── Lasso_Regression.ipynb  
+├── housing.csv  
+├── residual_distribution.png  
+└── README.md  
 
-In this project:
-- A housing dataset is used
-- Data is cleaned and analyzed
-- A Lasso Regression model is trained
-- Predictions are made based on input features
-- Model performance is evaluated
-- The impact of regularization is analyzed
-
-## 🧠 Concepts Covered
-
-- Data Loading & Exploration  
-- Data Preprocessing  
-- Feature Selection  
-- Train-Test Split  
-- Lasso Regression  
-- Model Evaluation  
-
-## 🛠️ Technologies Used
-
-- Python  
-- Jupyter Notebook  
-- NumPy  
-- Pandas  
-- Matplotlib / Seaborn  
-- Scikit-learn  
-
-## ▶️ How to Run
-
-1. Clone the repository  
-git clone https://github.com/your-username/your-repo-name.git
-
-2. Navigate to the project folder  
-cd your-repo-name
-
-3. Install dependencies  
-pip install numpy pandas matplotlib seaborn scikit-learn
-
-4. Open the notebook  
-jupyter notebook  
-Run all cells in `Lasso_Regression.ipynb`
+---
 
 ## 📊 Dataset
+- **File:** housing.csv  
+- **Type:** Tabular housing data  
+- **Purpose:** Used to train and evaluate a Lasso Regression model for house price prediction  
 
-- File: housing.csv  
-- Description: Housing-related features used for predicting house prices
+---
 
-## 📈 Output
+## 🛠️ Libraries & Tools Used
+- Python  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- scikit-learn  
 
-- Trained Lasso Regression model  
-- Evaluation metrics  
-- Feature selection using L1 regularization  
+---
 
-## 👨‍💻 Author
+## ⚙️ Project Workflow
+1. Load the housing dataset  
+2. Perform train-test split  
+3. Train a Lasso Regression model  
+4. Predict house prices on test data  
+5. Evaluate model performance using R² Score  
+6. Analyze residual distribution  
 
-Nishant Kumar  
-B.Tech – AI & ML  
+---
 
-⭐ Feel free to star the repository if you find it useful!
+## 📈 Model Evaluation
+
+**R² Score:** 0.6395660373503593  
+
+**Interpretation:**  
+The model explains approximately **64% of the variance** in housing prices.
+Lasso regularization helps simplify the model by reducing the impact of less
+important features while maintaining competitive performance.
+
+---
+
+## 📉 Residual Analysis
+
+**Residual Distribution (y_test − ridge_pred):**
+
+![Residual Distribution](residual_distribution.png)
+
+### Key Insights
+- Residuals are approximately normally distributed  
+- Indicates that regression assumptions are largely satisfied  
+- Feature sparsity introduced by Lasso improves interpretability  
+
+---
+
+## 📌 Key Observations
+- Lasso Regression performs implicit feature selection  
+- Helps reduce model complexity  
+- Useful when dealing with high-dimensional feature spaces  
+
+---
+
+## ▶️ How to Run the Project
+1. Clone the repository  
+```
+git clone https://github.com/your-username/Lasso_Regression.git  
+```
+2. Install required libraries  
+```
+pip install numpy pandas matplotlib scikit-learn
+```
+3. Open `Lasso_Regression.ipynb`  
+4. Run all cells sequentially  
+
+---
+
+## 🚀 Future Enhancements
+- Compare Lasso vs Ridge vs ElasticNet  
+- Tune the alpha parameter using cross-validation  
+- Analyze selected vs eliminated features  
+
+---
+
+## 👤 Author
+**Nishant Kumar**  
+B.Tech – Artificial Intelligence & Machine Learning  
