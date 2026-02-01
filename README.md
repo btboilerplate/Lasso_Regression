@@ -84,7 +84,7 @@ important features while maintaining competitive performance.
 ## ▶️ How to Run the Project
 1. Clone the repository  
 ```
-git clone https://github.com/your-username/Lasso_Regression.git  
+git clone https://github.com/btboilerplate/Lasso_Regression.git  
 ```
 2. Install required libraries  
 ```
